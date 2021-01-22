@@ -1,0 +1,20 @@
+
+Przygotowanie testow:
+      1) napisanie testow ---- tests/*.c tests/*.h  ---- [C]
+      2) Wykorzystano skrypy w pythonie ---- tests/scripts/make_results. [Python]
+
+Do przeprowadzenia testow napisano skrypt (w pliku run.c -- funkcja "run_multi"
+            --- ale byly jakies bugi, takze nalezy korzystac z funckji "run_one" ---
+             argumenty wejscia:
+                               nazwa_kompilacji
+                               numer_funkcji_run
+                               plik_do_testow
+                               macierz_A
+                               wektor_b     # 5 --- dla funckji "run_one"
+                                            # 6 --- dla funckcji "run_multi"
+
+              przyklad wywolania --- komnenda make test:
+                    : bin/gauss 0 tests/results/test_65_x_ tests/data/test_65 tests/data/test_65_b_,
+                    tj. dla "run_one" podajemy konkretna macierz A, wektor b oraz wektor testowy (wektor z poprawnymi wynikami)
+
+                                                                          )
